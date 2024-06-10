@@ -1,3 +1,4 @@
+import Datetime from "@/components/Datetime";
 import DisplayTodo from "@/components/DisplayTodo";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -6,6 +7,7 @@ const index = () => {
   return (
     <>
       <Navbar />
+      <Datetime />
       <TodoForm />
       <Footer />
     </>

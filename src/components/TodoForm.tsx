@@ -19,10 +19,13 @@ const TodoForm = () => {
   const [isClicked, setClicked] = useState(false);
 
   const addToDo = (input: string) => {
-    setClicked(!isClicked);
-    setLs([...ls, { id: uuidv4(), item: input, isDone: false }]);
-    console.log(ls);
-    setInput("");
+    if (input !== "") {
+      setLs([...ls, { id: uuidv4(), item: input, isDone: false }]);
+      console.log(ls);
+      setInput("");
+    } else {
+      alert("Please add something to input");
+    }
   };
 
   return (
@@ -58,9 +61,11 @@ const TodoForm = () => {
         </div>
       )} */}
 
-      {ls.map((todo) => {
-        return <>{<DisplayTodo key={todo.id} todo={todo} />}</>;
-      })}
+      <div className="pb-24">
+        {ls.map((todo) => {
+          return <>{<DisplayTodo key={todo.id} todo={todo} />}</>;
+        })}
+      </div>
     </>
   );
 };
