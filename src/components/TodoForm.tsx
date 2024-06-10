@@ -61,7 +61,7 @@ const TodoForm = () => {
         </div>
       )} */}
 
-      <div className="pb-24">
+      <div className="pb-24 md:pb-36">
         {ls.map((todo) => {
           return <>{<DisplayTodo key={todo.id} todo={todo} />}</>;
         })}
