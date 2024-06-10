@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="grid grid-cols-5 items-center py-2 px-5 lg:px-10 dark:bg-[#13132d] dark:drop-shadow-2xl shadow-indigo-500 bg-[#fafff4]">
+      <div className="grid grid-cols-5 items-center py-2 px-5 lg:px-10 dark:bg-[#13132d] dark:drop-shadow-2xl shadow-indigo-500 bg-[#78a5ff]">
         <div className="col-span-4 text-center text-3xl md:text-4xl lg:text-5xl font-semibold pl-12 lg:pl-64">
           <img
             src="/logo (2).png"

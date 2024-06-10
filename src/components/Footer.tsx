@@ -4,10 +4,10 @@ import { FaGithub, FaGoogleDrive } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <div className="fixed bottom-0 w-full  py-5 dark:bg-[#14142e] shadow-2xl shadow-purple-500 bg-[#fafff4] px-5">
+      <div className="fixed bottom-0 w-full  py-5 dark:bg-[#14142e] shadow-2xl shadow-purple-500 bg-[#cadcff] px-5">
         <div className="grid grid-cols-6">
           <div className="flex justify-end items-center col-span-5 md:col-span-4">
-            <div className=" text-sm lg:text-lg text-gray-400">
+            <div className=" text-sm lg:text-lg dark:text-gray-400 text-black">
               All Copyrights Reserved | ©{" "}
             </div>
 
